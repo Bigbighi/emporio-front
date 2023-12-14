@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*Container general*/
+.container-general{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Logo*/
+.effect-outline-logo{
+    background: linear-gradient(90deg, #BA73D9, #C18BD9, #F2F2F2, #B8C0D9, #80868C);
+    background-size: 400%;
+    border-radius: 15px;
+    height: 10px;
+    width: 100%;
+    animation: effect-outline-logo 10s infinite;
+}
+
+@keyframes effect-outline-logo {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*Promo*/
+.promo{
+    height: 600px;
+}
+
+.divisor-1{
+    background:#C18BD9;
+    border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
+}
+
+.divisor-2{
+    background:#B8C0D9;
+    border-radius: 100% 0% 0% 100% / 100% 100% 0% 0% ;
+}
+
+/*Carroucel*/
+@media (max-width: 768px) {
+    .swiper-wrapper{
+        width: 450px;
+    }
+}
+
+@media (min-width: 768px) {
+    .swiper-wrapper{
+        width: 600px;
+    }
+    
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
